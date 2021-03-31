@@ -1,0 +1,81 @@
+= Freyeday: Light vim colorscheme
+:experimental:
+:icons: font
+:autofit-option:
+:!source-linenums-option:
+:imagesdir: images
+
+Light vim colorscheme for the Friday and other *days.
+
+There is also https://github.com/habamax/vim-saturnite[Dark vim colorscheme for the Saturday nights and other *day nights].
+
+
+== Screens
+
+image::https://user-images.githubusercontent.com/234774/113099663-fe5c8c00-9202-11eb-95b9-6dd4a1898a4d.png[]
+
+image::https://user-images.githubusercontent.com/234774/113100099-9bb7c000-9203-11eb-814c-145ab625fe7c.png[]
+
+
+
+== Installation
+
+Follow the instructions plugin manager of choice has.
+
+Or simply put `freyeday.vim` into your `~/.vim/colors/` folder.
+
+
+== Looks good but I want italic comments
+
+Add following to your settings file:
+
+[source,vim]
+------------------------------------------------------------------------------
+
+augroup colorscheme_change | au!
+    au ColorScheme freyeday hi Comment gui=italic cterm=italic
+augroup END
+
+colorscheme freyeday
+
+------------------------------------------------------------------------------
+
+
+== And bold statements
+
+Add following to your settings file:
+
+[source,vim]
+------------------------------------------------------------------------------
+
+func! s:freyeday_setup() abort
+    hi Comment gui=italic cterm=italic
+    hi Statement gui=bold cterm=bold
+endfunc
+
+augroup colorscheme_change | au!
+    au ColorScheme freyeday call s:freyeday_setup()
+augroup END
+
+colorscheme freyeday
+
+------------------------------------------------------------------------------
+
+== And VertSplit without background colors
+
+[source,vim]
+------------------------------------------------------------------------------
+
+func! s:freyeday_setup() abort
+    hi Comment gui=italic cterm=italic
+    hi Statement gui=bold cterm=bold
+    hi VertSplit guibg=NONE ctermbg=NONE
+endfunc
+
+augroup colorscheme_change | au!
+    au ColorScheme freyeday call s:freyeday_setup()
+augroup END
+
+colorscheme freyeday
+
+------------------------------------------------------------------------------
