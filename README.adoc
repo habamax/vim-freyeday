@@ -79,3 +79,19 @@ augroup END
 colorscheme freyeday
 
 ------------------------------------------------------------------------------
+
+
+== I want my terminal background
+
+If you would like NOT to override your terminal background color -- make `Normal` background `NONE`:
+
+[source,vim]
+------------------------------------------------------------------------------
+
+augroup colorscheme_change | au!
+    au ColorScheme freyeday hi Normal ctermbg=NONE
+augroup END
+
+colorscheme freyeday
+
+------------------------------------------------------------------------------
