@@ -124,7 +124,7 @@ PreProc          color06    none
 Type             color12    none
 Special          color10    none
 
-Directory        foreground none bold
+Directory        color06    none bold
 Conceal          color08    none
 Ignore           none       none
 
