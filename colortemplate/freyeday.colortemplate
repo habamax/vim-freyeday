@@ -13,7 +13,7 @@ Background: light
 
 ;;; Color palette
 Color: foreground #1C1C1C 234
-Color: background #F7F7F7 255
+Color: background #EEEEEE 255
 
 Color: color00    #000000 16
 Color: color08    #8a8a8a 245
@@ -39,11 +39,11 @@ Color: color14    #87AFAF 109
 Color: color07    #BCBCBC 250
 Color: color15    #FFFFFF 231
 
-Color: color16    #E4E4E4 253
+Color: color16    #DADADA 253
 
-Color: color17    #EEEEEE 254
-Color: color18    #EFEAEA 254
-Color: color19    #EAEFEA 254
+Color: color17    #E4E4E4 254
+Color: color18    #EEE4E4 254
+Color: color19    #E4EEE4 254
 
 Term colors: color00 color01 color02 color03 color04 color05 color06 color07
 Term colors: color08 color09 color10 color11 color12 color13 color14 color15
@@ -107,6 +107,7 @@ lCursor          background color01
 DiffAdd          none       color19
 DiffChange       none       color17
 DiffText         color15    color12
+; DiffText         color15    color03
 DiffDelete       color09    color18
 
 SpellBad         color01    none t=underline g=undercurl s=color01
