@@ -96,7 +96,7 @@ MoreMsg          color04    none
 Question         color03    none
 
 Todo             background color08
-MatchParen       background color06
+MatchParen       background color12
 Search           background color10
 IncSearch        foreground color11
 WildMenu         foreground color11
