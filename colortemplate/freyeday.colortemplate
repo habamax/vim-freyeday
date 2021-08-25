@@ -78,11 +78,11 @@ SpecialKey       color07    none
 Folded           color08    color15
 Visual           background color04
 VisualNOS        background color04
-LineNr           color08    none
+LineNr           color08    color15
 FoldColumn       color08    color15
 CursorLine       none       color16
 CursorColumn     none       color16
-CursorLineNr     none       color16
+CursorLineNr     none       color15
 QuickFixLine     none       color16
 SignColumn       none       none
 
@@ -107,7 +107,6 @@ lCursor          background color01
 DiffAdd          none       color19
 DiffChange       none       color17
 DiffText         color15    color12
-; DiffText         color15    color03
 DiffDelete       color09    color18
 
 SpellBad         color01    none t=underline g=undercurl s=color01
