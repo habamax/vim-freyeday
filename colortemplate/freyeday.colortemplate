@@ -69,7 +69,7 @@ TabLine          foreground color07
 TabLineFill      color06    color07
 TabLineSel       background color06
 
-ToolbarLine      none       color15
+ToolbarLine      none       none
 ToolbarButton    foreground color14
 
 NonText          color07    none
@@ -78,11 +78,11 @@ SpecialKey       color07    none
 Folded           color08    color15
 Visual           background color04
 VisualNOS        background color04
-LineNr           color08    color15
+LineNr           color08    none
 FoldColumn       color08    color15
 CursorLine       none       color16
 CursorColumn     none       color16
-CursorLineNr     none       color15
+CursorLineNr     none       color16
 QuickFixLine     none       color16
 SignColumn       none       none
 
